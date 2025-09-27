@@ -9,6 +9,32 @@
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #fff;
       color: #222;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Декоративні кружки */
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    body::before {
+      width: 220px;
+      height: 220px;
+      background: rgba(230, 57, 70, 0.15);
+      top: 200px;
+      left: -100px;
+    }
+
+    body::after {
+      width: 320px;
+      height: 320px;
+      background: rgba(230, 57, 70, 0.12);
+      top: 120px;
+      right: -160px;
     }
 
     /* Хедер */
@@ -111,6 +137,7 @@
       font-size: 14px;
       color: #555;
       border-top: 1px solid #eee;
+      background: #fff;
     }
   </style>
 </head>
@@ -134,3 +161,14 @@
   <h1>Стильна колекція 2025</h1>
   <p>Відкрий новий образ з нашими модними новинками. Доставляємо по всій Україні.</p>
   <div class="hero-buttons">
+    <button class="btn btn-primary">Купити зараз</button>
+    <button class="btn btn-secondary">Переглянути каталог</button>
+  </div>
+</section>
+
+<footer>
+  © 2025 Мій Магазин. Всі права захищені.
+</footer>
+
+</body>
+</html>

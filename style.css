@@ -1,7 +1,7 @@
-/* Загальні стилі */
+/* ===== Загальні стилі ===== */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background-color: #FFFFFF;
   color: #333333;
 }
@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 
-/* Хедер */
+/* ===== Хедер ===== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -48,29 +48,60 @@ a {
   color: #555555;
 }
 
+/* ===== Кнопки ===== */
 .btn {
-  padding: 12px 28px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+/* Primary button */
+.btn-primary {
   background-color: #E63946;
   color: #FFFFFF;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
 }
 
-.btn:hover {
+.btn-primary:hover {
   background-color: #D62839;
+  box-shadow: 0 6px 16px rgba(214, 40, 57, 0.4);
 }
 
-/* Hero секція */
+.btn-primary:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 6px rgba(214, 40, 57, 0.3);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: transparent;
+  color: #111111;
+  border: 2px solid #111111;
+}
+
+.btn-secondary:hover {
+  background-color: #111111;
+  color: #FFFFFF;
+}
+
+.btn-secondary:active {
+  transform: scale(0.96);
+  background-color: #333333;
+  border-color: #333333;
+}
+
+/* ===== Hero секція ===== */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 100px 80px;
-  background-color: #F8F9FA;  /* світлий фон */
+  background-color: #F8F9FA;
 }
 
 .hero-text {
@@ -97,19 +128,13 @@ a {
   gap: 24px;
 }
 
-.hero-buttons .link {
-  font-size: 16px;
-  font-weight: 500;
-  color: #111111;
-}
-
 .hero-img img {
   width: 500px;
   border-radius: 12px;
   object-fit: cover;
 }
 
-/* Футер */
+/* ===== Футер ===== */
 .footer {
   text-align: center;
   padding: 40px;

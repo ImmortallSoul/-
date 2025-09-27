@@ -2,44 +2,135 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecommerce Landing</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Магазин</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+
+    /* Хедер */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #E63946;
+    }
+
+    .auth {
+      display: flex;
+      gap: 12px;
+    }
+
+    /* Кнопки */
+    .btn {
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary {
+      background: #E63946;
+      color: #fff;
+      border: none;
+      box-shadow: 0 3px 8px rgba(230,57,70,0.3);
+    }
+    .btn-primary:hover {
+      background: #D62839;
+    }
+    .btn-primary:active {
+      transform: scale(0.97);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #111;
+      border: 2px solid #111;
+    }
+    .btn-secondary:hover {
+      background: #111;
+      color: #fff;
+    }
+    .btn-secondary:active {
+      transform: scale(0.97);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 40px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 500px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+    }
+
+    footer {
+      padding: 20px 40px;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #eee;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">ShopLogo</div>
-    <nav class="nav">
-      <a href="#">Головна</a>
-      <a href="#">Каталог</a>
-      <a href="#">Про нас</a>
-      <a href="#">Контакти</a>
-    </nav>
-    <div class="header-actions">
-      <a href="#" class="login">Увійти</a>
-      <button class="btn btn-primary">Реєстрація</button>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Стильна колекція 2025</h1>
-      <p>Відкрий новий образ з нашими модними новинками. Доставляємо по всій Україні.</p>
-      <div class="hero-buttons">
-        <button class="btn btn-primary">Купити зараз</button>
-        <button class="btn btn-secondary">Переглянути каталог</button>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="images/product-hero.jpg" alt="Product">
-    </div>
-  </section>
+<header>
+  <div class="logo">ShopLogo</div>
+  <nav>
+    <a href="#">Головна</a>
+    <a href="#">Каталог</a>
+    <a href="#">Про нас</a>
+    <a href="#">Контакти</a>
+  </nav>
+  <div class="auth">
+    <button class="btn btn-secondary">Увійти</button>
+    <button class="btn btn-primary">Реєстрація</button>
+  </div>
+</header>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Мій Магазин. Всі права захищенні.</p>
-  </footer>
-</body>
-</html>
+<section class="hero">
+  <h1>Стильна колекція 2025</h1>
+  <p>Відкрий новий образ з нашими модними новинками. Доставляємо по всій Україні.</p>
+  <div class="hero-buttons">

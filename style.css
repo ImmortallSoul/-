@@ -53,7 +53,7 @@ body {
   color: #d33;
 }
 
-/* Burger menu (іконка справа) */
+/* Burger menu */
 .burger {
   display: flex;
   flex-direction: column;
@@ -150,7 +150,7 @@ body::after {
   left: -100px;
 }
 
-/* 🔹 Декоративна хвиляста лінія */
+/* 🔹 Декоративна хвиля */
 .hero::after {
   content: "";
   position: absolute;

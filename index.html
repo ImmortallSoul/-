@@ -111,7 +111,15 @@
 
     /* Hero */
     .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 80px 40px;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 500px;
     }
 
     .hero h1 {
@@ -122,7 +130,6 @@
 
     .hero p {
       font-size: 18px;
-      max-width: 500px;
       margin-bottom: 30px;
       color: #555;
     }
@@ -132,12 +139,20 @@
       gap: 16px;
     }
 
+    .hero img {
+      max-width: 450px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
     footer {
       padding: 20px 40px;
       font-size: 14px;
       color: #555;
       border-top: 1px solid #eee;
       background: #fff;
+      text-align: center;
     }
   </style>
 </head>
@@ -158,11 +173,16 @@
 </header>
 
 <section class="hero">
-  <h1>Стильна колекція 2025</h1>
-  <p>Відкрий новий образ з нашими модними новинками. Доставляємо по всій Україні.</p>
-  <div class="hero-buttons">
-    <button class="btn btn-primary">Купити зараз</button>
-    <button class="btn btn-secondary">Переглянути каталог</button>
+  <div class="hero-text">
+    <h1>Стильна колекція 2025</h1>
+    <p>Відкрий новий образ з нашими модними новинками. Доставляємо по всій Україні.</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary">Купити зараз</button>
+      <button class="btn btn-secondary">Переглянути каталог</button>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1520975928318-3f6f5f1dc2a8?w=800" alt="Модна колекція">
   </div>
 </section>
 
